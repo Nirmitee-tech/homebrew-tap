@@ -3,27 +3,27 @@
 class Tether < Formula
   desc "Your dev machine in your pocket: files, terminals, git and previews from your phone"
   homepage "https://tether.ahabyte.com"
-  version "0.7.0"
+  version "0.8.0"
 
   on_macos do
     on_arm do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.7.0/tether_0.7.0_darwin_arm64.tar.gz"
-      sha256 "ba64eb1eafc040536b204141aff315b3768610d5a2174b7980e545f596a89de7"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.0/tether_0.8.0_darwin_arm64.tar.gz"
+      sha256 "afcdf3cc2f4ab1929cbb7d0d4b9c13a2503a3da016964d170cfe48aafd31f533"
     end
     on_intel do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.7.0/tether_0.7.0_darwin_amd64.tar.gz"
-      sha256 "5b15f0e793850b6c51cbdaad3fecb7819a19c10ad958608a08619ab1f73d8226"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.0/tether_0.8.0_darwin_amd64.tar.gz"
+      sha256 "b852c81bf302700f124841401a3c2be587095b57e674f13dcd88a82b34f0af31"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.7.0/tether_0.7.0_linux_arm64.tar.gz"
-      sha256 "000358fd8996fe02b75497ac5f809614254dec9f10994d28e7ee0422ed57e70d"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.0/tether_0.8.0_linux_arm64.tar.gz"
+      sha256 "855497a53939361325ec9f375e4c716a91966a1de4004509fcc7e148f3f99a55"
     end
     on_intel do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.7.0/tether_0.7.0_linux_amd64.tar.gz"
-      sha256 "297463310c91c420a305a7cb50966ae0a5bef8539e7200186dcf58d451f57e26"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.0/tether_0.8.0_linux_amd64.tar.gz"
+      sha256 "2fde0cbf511d9815e6c8195fc56b30e038b2f8adbbe57f93929907d9873c6490"
     end
   end
 
@@ -38,6 +38,10 @@ class Tether < Formula
     <<~EOS
       Start Tether in the background (it also starts again at login):
         tether start
+
+      On a new machine it first asks how to run it: self-host (the
+      default, press Enter) or Tether host (a fixed address on your
+      Tether account; tether start --hosted skips the question).
 
       It prints a link and a QR code that open the Tether app for this
       machine: https://tether.ahabyte.com
