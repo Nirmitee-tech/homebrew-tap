@@ -2,6 +2,8 @@
 
 [Tether](https://tether.ahabyte.com) puts your dev machine in your pocket: browse files, run terminals, check git, preview dev servers and test APIs on your computer from your phone.
 
+This tap installs it on macOS and Linux. On Windows, install it with [Chocolatey](#windows-chocolatey).
+
 ## Install
 
 ```sh
@@ -30,6 +32,24 @@ After `brew upgrade tether`, run `tether restart`.
 
 Works on macOS (launchd) and Linux (systemd user service). On a Linux server, run `loginctl enable-linger $USER` so it keeps running when you're logged out.
 
+## Windows (Chocolatey)
+
+In an administrator PowerShell:
+
+```powershell
+choco install tether
+```
+
+Then, in a normal PowerShell (not as administrator, so your terminals aren't either):
+
+```powershell
+tether start
+```
+
+The first version on Chocolatey (0.8.0) is waiting for Chocolatey's moderators; `choco install tether` works once they approve it ([package page](https://community.chocolatey.org/packages/tether)).
+
+It installs `cloudflared` too, and works on Windows 10 (version 1809 or later) and Windows 11, x64 or ARM64. `tether start` asks the same question as above, and the commands are the same. Terminals run PowerShell 7 if it's installed, otherwise Windows PowerShell; set `TETHER_SHELL` (for example to `cmd.exe` or Git Bash's `bash.exe`) before `tether start` to use another shell. In the background Tether runs as `tetherw.exe`, with no window, and starts again when you sign in (no administrator rights needed). After `choco upgrade tether`, run `tether start` again.
+
 ## Uninstall
 
 On Tether host, first remove the machine from your Tether account (in the app: Settings → Remove … from your account), so its address is freed.
@@ -38,4 +58,11 @@ On Tether host, first remove the machine from your Tether account (in the app: S
 tether stop
 brew uninstall tether
 rm -rf ~/.tether     # this machine's account, projects, API collections and saved terminals
+```
+
+On Windows, in an administrator PowerShell (this stops Tether too):
+
+```powershell
+choco uninstall tether
+Remove-Item -Recurse $HOME\.tether     # this machine's account, projects, API collections and saved terminals
 ```
