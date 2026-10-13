@@ -4,6 +4,16 @@
 
 This tap installs it on macOS and Linux. On Windows, install it with [Chocolatey](#windows-chocolatey).
 
+<p align="center">
+  <img src="images/projects.png" width="200" alt="Projects, with minimized projects as tabs at the bottom">
+  <img src="images/files.png" width="200" alt="Folder: a live listing of the project">
+  <img src="images/terminal.png" width="200" alt="Terminal: a real shell, with an extra-keys bar and a command bar">
+  <img src="images/git.png" width="200" alt="Git: staged, changed and untracked files">
+</p>
+<p align="center">
+  <img src="images/desktop.png" width="820" alt="Tether on a desktop: a project's git diff">
+</p>
+
 ## Install
 
 ```sh
@@ -17,6 +27,13 @@ On a new machine, `tether start` first asks how to run it:
 - **Tether host**: the machine joins your Tether account and gets a fixed address that never changes. The terminal shows a pairing link and a QR code; sign in to your Tether account (or create one) and approve the machine.
 
 `tether start --self-host` or `tether start --hosted` skips the question. Either way Tether runs in the background: it restarts if it crashes and starts again at login.
+
+**Install it like an app.** Open the link in your phone's browser and Tether offers to install itself: Chrome, Edge and Android get an **Install** button, iPhone and Safari get the steps.
+
+<p align="center">
+  <img src="images/install-android.png" width="200" alt="Install popup on Android: Install or Not now">
+  <img src="images/install-ios.png" width="200" alt="Install popup on iPhone: Add to Home Screen steps">
+</p>
 
 | Command | |
 |---|---|
