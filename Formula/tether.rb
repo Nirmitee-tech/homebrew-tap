@@ -8,22 +8,22 @@ class Tether < Formula
   on_macos do
     on_arm do
       url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_darwin_arm64.tar.gz"
-      sha256 "f06cfa66e85887d9e493b0448643908e7d9b5fb406f8084c054add884b74d321"
+      sha256 "a2fa95dfdf6dc49980518011a73c8de7886ca49c5828f20167e44ccc3611296a"
     end
     on_intel do
       url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_darwin_amd64.tar.gz"
-      sha256 "f6cb686839b044a3ba84b774df243f7ae3a5edb80b7a7f1bf372f8771e90341c"
+      sha256 "86d3f6642a70686516d7dd52cd604773cc4cff682e173a956bf04af9ddcaa203"
     end
   end
 
   on_linux do
     on_arm do
       url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_linux_arm64.tar.gz"
-      sha256 "0a60b0ed7e26897387a3fad2879adfcabbe8b7a74688c125195cbd79ef2a0911"
+      sha256 "ea7c353c15aefc2865cb9fc3baa07d9f3bbed60cf124778a5d1c300207157ba1"
     end
     on_intel do
       url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_linux_amd64.tar.gz"
-      sha256 "35ad993a7c834b4a75f5b16585d35b3c0eead41eb98a2e12282c5e17478c7fc0"
+      sha256 "3e7ea3c4f0ec55543cc2761d9cb9429d6b9e94e221c156220ba49d34752e5b89"
     end
   end
 
