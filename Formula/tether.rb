@@ -3,27 +3,27 @@
 class Tether < Formula
   desc "Your dev machine in your pocket: files, terminals, git and previews from your phone"
   homepage "https://tether.ahabyte.com"
-  version "0.8.2"
+  version "0.8.3"
 
   on_macos do
     on_arm do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_darwin_arm64.tar.gz"
-      sha256 "a2fa95dfdf6dc49980518011a73c8de7886ca49c5828f20167e44ccc3611296a"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.3/tether_0.8.3_darwin_arm64.tar.gz"
+      sha256 "bdb8bc9b88dd816f29b513d8e5dfe0614a7861cf0058a62e96363f86836cd566"
     end
     on_intel do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_darwin_amd64.tar.gz"
-      sha256 "86d3f6642a70686516d7dd52cd604773cc4cff682e173a956bf04af9ddcaa203"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.3/tether_0.8.3_darwin_amd64.tar.gz"
+      sha256 "d600e9db35c4325e8dcdfb8f36c469509cd2fc9d625bcc9b35f41efe762602ed"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_linux_arm64.tar.gz"
-      sha256 "ea7c353c15aefc2865cb9fc3baa07d9f3bbed60cf124778a5d1c300207157ba1"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.3/tether_0.8.3_linux_arm64.tar.gz"
+      sha256 "b50dd6a9bcfdad33c35ecbfacdf48d7daf09df9593b0c9a7a7054eaf278e489a"
     end
     on_intel do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.2/tether_0.8.2_linux_amd64.tar.gz"
-      sha256 "3e7ea3c4f0ec55543cc2761d9cb9429d6b9e94e221c156220ba49d34752e5b89"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.8.3/tether_0.8.3_linux_amd64.tar.gz"
+      sha256 "3c809a6e34f4efa5e8f2369ed87af91f98e0463f8fac0d5bcf70d312f54f5b41"
     end
   end
 
