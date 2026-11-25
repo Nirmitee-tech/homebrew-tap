@@ -3,27 +3,27 @@
 class Tether < Formula
   desc "Your dev machine in your pocket: files, terminals, git and previews from your phone"
   homepage "https://tether.ahabyte.com"
-  version "0.10.1"
+  version "0.10.2"
 
   on_macos do
     on_arm do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.1/tether_0.10.1_darwin_arm64.tar.gz"
-      sha256 "9705f0ae60cd58ec6d6885e974686c4d9ab91c80e7a9122fb967f00c95731d85"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.2/tether_0.10.2_darwin_arm64.tar.gz"
+      sha256 "07ce068b586d45d5e74037c47c2609dfcc4aeebfff6e9671e754aeb9138b9b9b"
     end
     on_intel do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.1/tether_0.10.1_darwin_amd64.tar.gz"
-      sha256 "2b8e7c4fd02d34af319829ea60f3773a1072a04621723ad03a55cc27798c6019"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.2/tether_0.10.2_darwin_amd64.tar.gz"
+      sha256 "c4cfd04c62dcbe7713976001c571871c030a8597f3a20ea6a5e3b7082310d3ec"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.1/tether_0.10.1_linux_arm64.tar.gz"
-      sha256 "955be64ab071f1474bc6cef9ebc2947b82b35ad7e6d59a07677154faeeec31fb"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.2/tether_0.10.2_linux_arm64.tar.gz"
+      sha256 "2d90b6471f60f1c771d265d7dfe93b85e4f6422bb1a91fbb98b66eac8acb0abd"
     end
     on_intel do
-      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.1/tether_0.10.1_linux_amd64.tar.gz"
-      sha256 "7e4330be941050c69f7a4d1ff002c1edc5c6957816ad50245d99836c3748f81f"
+      url "https://gulshanai-tether-releases.s3.ap-south-1.amazonaws.com/v0.10.2/tether_0.10.2_linux_amd64.tar.gz"
+      sha256 "1f50558c752106503bb169828e80e302a1c1f891f365e10a98fa30398e5f5798"
     end
   end
 
@@ -46,7 +46,7 @@ class Tether < Formula
       It prints a link and a QR code that open the Tether app for this
       machine: https://tether.ahabyte.com
 
-      After `brew upgrade tether`, run `tether restart`.
+      To update later: tether update
       Other commands: tether status | logs | stop | help
     EOS
   end

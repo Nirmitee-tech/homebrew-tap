@@ -43,9 +43,10 @@ On a new machine, `tether start` first asks how to run it:
 | `tether open` | open the Tether app for this machine |
 | `tether setup-code` | the one-time code for a self-hosted machine's account |
 | `tether logs -f` | follow the log |
+| `tether update` | update to the newest version and restart it (Tether 0.10.2 or later) |
 | `tether stop` | stop it (and don't start at login) |
 
-After `brew upgrade tether`, run `tether restart`.
+To update: `tether update`. With an older Tether, run `brew upgrade tether`, then `tether restart`.
 
 Works on macOS (launchd) and Linux (systemd user service). On a Linux server, run `loginctl enable-linger $USER` so it keeps running when you're logged out.
 
